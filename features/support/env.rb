@@ -22,7 +22,7 @@ when "headless"
       options.add_argument "--no-sandbox"
       options.add_argument "--disable-site-isolation-trials"
     end
-    Capybara::Selenium::Driver.new(app, browser: :chrome, options:chrome_options)
+    Capybara::Selenium::Driver.new(app, browser: :chrome, options: chrome_options)
   end
   @driver = :selenium_chrome_headless
 else
