@@ -13,7 +13,7 @@ Before("@login") do
 end
 
 After do |scenario|
-  screenshot = page.save_screenshot("log/screenshots/#{scenario__id__}.png")
+  screenshot = page.save_screenshot("log/screenshots/#{scenario.__id__}.png")
   embed(screenshot, "image/png", "Screenshot")
 end
 
